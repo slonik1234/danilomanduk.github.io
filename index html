@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>MOONSHOP Links</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url("774bef74-375b-445c-afe3-57d70919a81a.png") no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 15px auto;
+      padding: 15px 25px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 15px;
+      text-decoration: none;
+      color: white;
+      width: 320px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .link-btn img {
+      width: 28px;
+      height: 28px;
+    }
+
+    .link-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255,255,255,0.4);
+    }
+
+    /* Окремі стилі для кнопок */
+    .tiktok {
+      background: linear-gradient(135deg, #2d0033, #0a0011);
+    }
+
+    .discord {
+      background: linear-gradient(135deg, #5865F2, #4a1a78);
+    }
+
+    .telegram {
+      background: linear-gradient(135deg, #0088cc, #005577);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="https://www.tiktok.com/@moonshopua11" class="link-btn tiktok" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046120.png" alt="TikTok">
+      TIKTOK - MOONSHOP
+    </a>
+    <a href="https://www.tiktok.com/@artyomchikkk" class="link-btn tiktok" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046120.png" alt="TikTok">
+      TIKTOK - ARTYOMCHIKKK
+    </a>
+    <a href="https://discord.gg/elephenqt" class="link-btn discord" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/3670/3670157.png" alt="Discord">
+      DISCORD - ELEPHENQT
+    </a>
+    <a href="https://t.me/moonshopua111" class="link-btn telegram" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+      TELEGRAM - MOONSHOP
+    </a>
+  </div>
+</body>
+</html>
