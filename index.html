@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>MOONSHOP Links</title>
+  <style>
+    /* Фон космос */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(ellipse at bottom, #1b0034 0%, #090010 100%);
+      overflow: hidden;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Ефект зірок */
+    body::before {
+      content: '';
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      background: transparent url('https://i.ibb.co/1MZzRZD/stars.png') repeat;
+      animation: moveStars 100s linear infinite;
+    }
+
+    @keyframes moveStars {
+      from { transform: translateY(0); }
+      to { transform: translateY(-1000px); }
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+
+    .link-btn {
+      display: block;
+      margin: 15px auto;
+      padding: 15px 25px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 15px;
+      text-decoration: none;
+      color: white;
+      width: 280px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .link-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255,255,255,0.4);
+    }
+
+    /* Окремі стилі для кнопок */
+    .tiktok {
+      background: linear-gradient(135deg, #2d0033, #0a0011);
+    }
+
+    .discord {
+      background: linear-gradient(135deg, #5865F2, #4a1a78);
+    }
+
+    .telegram {
+      background: linear-gradient(135deg, #0088cc, #005577);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="https://www.tiktok.com/@moonshopua11" class="link-btn tiktok" target="_blank">
+      TIKTOK - MOONSHOP
+    </a>
+    <a href="https://www.tiktok.com/@artyomchikkk" class="link-btn tiktok" target="_blank">
+      TIKTOK - ARTYOMCHIKKK
+    </a>
+    <a href="https://discord.gg/elephenqt" class="link-btn discord" target="_blank">
+      DISCORD - ELEPHENQT
+    </a>
+    <a href="https://t.me/moonshopua11" class="link-btn telegram" target="_blank">
+      TELEGRAM - MOONSHOP
+    </a>
+  </div>
+</body>
+</html>
